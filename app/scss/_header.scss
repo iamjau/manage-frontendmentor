@@ -1,6 +1,6 @@
 .header {
     nav {
-        padding: 1.5625rem;
+        padding: 1.5625rem 3rem;
     }
     &__hamburger-menu {
         > span {
@@ -8,14 +8,54 @@
             width: 1.625rem;
             height: 0.312rem;
             background-color: $veryDarkBlue;
+            transition: all 300ms ease-in-out;
+            transform-origin: 0.125rem 0.125rem;
 
             &:not(:last-child) {
                 margin-bottom: 0.1875rem;
+            }
+        }
+
+        &.open {
+            > span:first-child {
+                transform: rotate(45deg);
+            }
+
+            > span:nth-child(2) {
+                opacity: 0;
+            }
+
+            >span:last-child {
+                transform: rotate(-45deg);
             }
         }
     }
 
     &__links {
         cursor: pointer;
+
+        a {
+            color: $darkBlue;
+            font-weight: 500;
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+
+        a:hover {
+            color: $darkGrayishBlue;
+            transition: color 200ms ease-in-out;
+        }
+    }
+
+    &__cta {
+        font-size: 1rem;
+        color: #fff;
+
+        &:hover {
+            opacity: 0.75;
+            transition: 200ms ease-in-out;
+        };
     }
 }

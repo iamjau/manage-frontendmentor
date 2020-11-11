@@ -37,3 +37,26 @@ a:visited {
         align-items: center;
     }
 }
+
+button,
+.button {
+    padding: 0.9375rem 2rem;
+    background-color: $brightRed;
+    border-radius: 50px;
+    border: 0;
+    font-weight: 700;
+}
+
+//Visibility (Responsive)
+
+.hide-for-mobile {
+    @include breakpoint-down (medium) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up (large) {
+        display: none;
+    }
+}   
