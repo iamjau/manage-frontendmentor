@@ -12,4 +12,28 @@ body {
     margin: 0;
     line-height: 1.5;
     font-family: 'Be Vietnam', sans-serif;
+    font-size: 1rem;
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+}
+
+//Flexbox Styles
+.flex {
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
 }

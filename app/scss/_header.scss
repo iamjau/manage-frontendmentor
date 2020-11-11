@@ -1,0 +1,21 @@
+.header {
+    nav {
+        padding: 1.5625rem;
+    }
+    &__hamburger-menu {
+        > span {
+            display: block;
+            width: 1.625rem;
+            height: 0.312rem;
+            background-color: $veryDarkBlue;
+
+            &:not(:last-child) {
+                margin-bottom: 0.1875rem;
+            }
+        }
+    }
+
+    &__links {
+        cursor: pointer;
+    }
+}
